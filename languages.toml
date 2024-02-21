@@ -1,0 +1,4 @@
+[language-server.clangd]
+command = "clangd"
+args =  ["-j=16", "--malloc-trim", "--background-index"]
+# args =  ["-j=12", "--malloc-trim"]
