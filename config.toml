@@ -1,0 +1,45 @@
+# theme="catppuccin_mocha"
+# theme="tokyonight_storm"
+# theme="everforest_dark"
+theme="ayu_mirage"
+
+[editor]
+true-color = true
+bufferline = "multiple"
+cursorline = true
+# auto-format = false
+# auto-save = false
+insert-final-newline=true
+# rulers = [80, 120]
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace]
+# render = "all"
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+# newline = "all"
+
+[editor.indent-guides]
+render = true
+# character = "╎"
+
+[editor.statusline]
+left = ["mode", "version-control", "spinner", "file-modification-indicator", "file-name"]
+# center = ["file-name", "file-modification-indicator"]
+right = ["position", "spacer", "diagnostics", "file-encoding", "file-type"]
+separator = "│"
+mode.normal = "[NOR]"
+mode.insert = "[INS]"
+mode.select = "[SEL]"
+
+[keys.normal.space]
+"H" = ":toggle lsp.display-inlay-hints"
+
+[keys.normal]
+C-k = "jump_view_up"
+C-j = "jump_view_down"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
