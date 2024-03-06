@@ -7,6 +7,7 @@ theme="ayu_mirage"
 true-color = true
 bufferline = "multiple"
 cursorline = true
+color-modes = true
 # auto-format = false
 # auto-save = false
 insert-final-newline=true
@@ -27,13 +28,13 @@ render = true
 # character = "╎"
 
 [editor.statusline]
-left = ["mode", "version-control", "spinner", "file-modification-indicator", "file-name"]
+left = ["mode", "spacer", "version-control", "spinner", "file-modification-indicator", "file-name"]
 # center = ["file-name", "file-modification-indicator"]
 right = ["position", "spacer", "diagnostics", "file-encoding", "file-type"]
 separator = "│"
-mode.normal = "[NOR]"
-mode.insert = "[INS]"
-mode.select = "[SEL]"
+# mode.normal = "[NOR]"
+# mode.insert = "[INS]"
+# mode.select = "[SEL]"
 
 [keys.normal.space]
 "H" = ":toggle lsp.display-inlay-hints"
